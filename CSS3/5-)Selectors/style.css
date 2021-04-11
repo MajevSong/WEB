@@ -1,0 +1,52 @@
+/* *{] hepsini kapsar.. */
+*{
+    color: magenta;
+}
+
+button{
+    font-size: 30px;
+}
+
+h1,h2{
+    color:burlywood;
+}
+
+#buton1{
+    color:aquamarine;
+    background-color: black;
+}
+
+.tag{
+    color:darkorange;
+}
+
+span{
+    color:darkslateblue;
+    font-weight:bold;
+}
+
+input[type="text"]{
+    color: red;
+}
+
+a[href*="google"]{
+    color: magenta;
+}
+
+button:hover{
+    color:blue;
+}
+
+p::first-line{
+    color:blueviolet;
+}
+
+p::first-letter{
+    text-transform: uppercase;
+}
+
+/*descendent
+footer > a{
+
+}
+*/

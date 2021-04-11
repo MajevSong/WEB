@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- action, GET, POST gibi metodlar var.
+    GET verileri getirmek, POST göndermek için
+    action ise yapılacak aksiyon-->
+    <form action="https://www.google.com/">
+        <input type="text" name="" id="" placeholder="İsim">
+        <br>
+        <br>
+        <input type="password" name="sifre" id="sifre" placeholder="Şifrenizi Girin">
+        <br><br>
+        <input type="radio" name="gender" value="Erkek">Erkek
+        <input type="radio" name="gender" value="Erkek">Kadın
+        <br><br>
+        <select name="memleket" id="memleket">
+            <option value="Konya">Konya</option>
+            <option value="İstanbul">İstanbul</option>
+        </select>
+        <input type="submit" value="Gönder">
+    </form>
+    <!-- URL de gözükmemesi için POST yapmalıyız-->
+    <form method="POST">
+        <input type="text" name="" id="" placeholder="İsim">
+        <br>
+        <br>
+        <input type="password" name="sifre" id="sifre" placeholder="Şifrenizi Girin">
+        <br><br>
+        <input type="radio" name="gender" value="Erkek">Erkek
+        <input type="radio" name="gender" value="Erkek">Kadın
+        <br><br>
+        <select name="memleket" id="memleket">
+            <option value="Konya">Konya</option>
+            <option value="İstanbul">İstanbul</option>
+        </select>
+        <input type="submit" value="Veri gönder">
+    </form>
+
+    <form action="/search">
+        <label for="username">Enter a Username:</label>
+        <input id="username" type="text" placeholder="username">
+    </form>
+    
+    <form action="https://www.google.com/search">
+        <label for="username">Google Search:</label>
+        <input id="username" name="q" type="text" placeholder="Search">
+        <button>Google</button>
+    </form>
+    
+    <form action="https://www.youtube.com/results">
+        <label for="username">Youtube Search:</label>
+        <input id="username" name="search_query" type="text" placeholder="Search">
+        <button>Youtube</button>
+    </form>
+    
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree>
+        <label for=" agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="meal">Please an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg" selected>Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <!-- value = başlangıç değeri.-->
+            <input type="range" id="cheese" min="1" max="100" value="60" step="10" name="cheese_level">
+        </p>
+
+        <p>
+            <label for="request">Any Special Requests?</label>
+            <br>
+            <textarea name="Requests?" id="requests" cols="40" rows="10" placeholder="Write something..."></textarea>
+        </p>
+        <button>Submit</button>
+
+    </form>
+
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="20">
+        </p>
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html> 
