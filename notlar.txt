@@ -1,0 +1,6 @@
+port dinlemek için
+nodemon filename.js
+
+paket yüklemek için
+npm i -g package_name
+
