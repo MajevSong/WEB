@@ -12,6 +12,8 @@ class Pet {
 class Cat extends Pet {
 	constructor(name, age, livesLeft = 9) {
 		console.log('IN CAT CONSTRUCTOR!');
+		// super, classın inherit yoluyla edindiği özelliği edinir
+		// yani name ve age inherit edilen Pet classında mevcut olduğu için çağırabiliriz.
 		super(name, age);
 		this.livesLeft = livesLeft;
 	}
