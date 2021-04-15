@@ -4,3 +4,14 @@ nodemon filename.js
 paket yüklemek için
 npm i -g package_name
 
+İlk önce fork ettiğimiz repository seçilir sonra
+o repositoriye ait bir branch oluşturulur ve
+onu kendi repository imiz ile merge etmek için şu kodu yazmalıyız;
+
+git merge master1 (new branch)
+
+branch değiştirmek için
+git checkout <branch>
+
+tüm branchları listelemek için
+git branch -l 

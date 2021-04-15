@@ -1,0 +1,8 @@
+npm init -y
+bize lisanslı bir npm package dosyası oluşturur.
+
+npm i package_file 
+projemize paket yüklememizi sağlar.
+
+npm i -g package file 
+projemize global paket yüklememizi sağlar.
